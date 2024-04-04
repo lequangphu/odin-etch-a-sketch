@@ -1,0 +1,18 @@
+/* The Grid is a flex container.
+The Rows are flex items of the Grid.
+The Rows are also flex containers.
+The Columns are flex items of Rows. */
+
+.container {
+  display: flex;
+}
+
+#grid {
+  flex-direction: column;
+}
+
+.column {
+  flex: 1;
+  aspect-ratio: 1;
+  border: 1px solid black;
+}
