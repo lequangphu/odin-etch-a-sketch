@@ -5,6 +5,7 @@ The Columns are flex items of Rows. */
 
 .container {
   display: flex;
+  justify-content: center;
 }
 
 #grid {
@@ -15,4 +16,8 @@ The Columns are flex items of Rows. */
   flex: 1;
   aspect-ratio: 1;
   border: 1px solid black;
+}
+
+button {
+  margin: 8px;
 }
