@@ -47,8 +47,15 @@ theButton.addEventListener('click', () => {
     theGrid = addChildNode(theGrid, row, gridSize);
 })
 
+const getRandomColor = () => {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${green}, ${blue})`;
+};
+
 theGrid.addEventListener('mouseover', (event) => {
     if (event.target.classList.contains('column')) {
-        event.target.style.backgroundColor = 'black';
+        event.target.style.backgroundColor = getRandomColor();
     }
-})
+});
